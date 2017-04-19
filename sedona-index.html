@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/sedona-index-style.css">
   </head>
   <body>
   <div class="positioner">
     <header class="main-header">
-      <div class="header-positioner">
-        <div class="logo">
-          <a href="#"><img src="#" alt="logo" width="100" height="100"></a>
-        </div>
-        <nav class="header-menu">
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="logo" width="138" height="70"></a>
+      </div>
+      <nav class="header-menu">
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -27,14 +27,13 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
     <main>
       <section class="main-intro">
         <div class="main-intro-photo"></div>
       </section>
 
-      <section class="main-content">
+      <section class="introduction">
           <h2 class="main-features">Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
           <div class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</div>
@@ -43,27 +42,27 @@
       <section class="main-content  photo-advantages">
         <article class="main-content-reason reason">
           <h2 class="main-features">Настоящий городок</h2>
-          <div class="reason-number">№1</div>
+          <div class="reason-number">-№1-</div>
           <div class="features-description">Седона - не аттрацион для туристов, там течет своя жизнь</div>
         </article>
         <div class="main-content-reason picture-1">
-          <img src="#" alt="фото отеля" width="100" height="100">
+          <img src="img/photo-1.jpg" alt="Фото отеля" width="800" height="256">
         </div>
       </section>
 
       <section class="main-content bonuses">
         <article class="main-content-reason feature">
-          <img src="#" alt="Жилье" width="100" height="100">
+          <img src="img/icon-house.png" alt="Жилье" width="75" height="72">
           <h2 class="main-features">Жилье</h2>
           <div class="features-description">Рекомендуем пожить<br> в настоящем мотеле,<br>все как в кино!</div>
         </article>
         <article class="main-content-reason feature">
-          <img src="#" alt="Еда" width="100" height="100">
+          <img src="img/icon-food.png" alt="Еда" width="74" height="70">
           <h2 class="main-features">Еда</h2>
           <div class="features-description">Всегда заказывайте<br> фирменный бургер,<br>вы не разочаруетесь!</div>
         </article>
         <article class="main-content-reason feature">
-          <img src="#" alt="Сувениры" width="100" height="100">
+          <img src="img/icon-present.png" alt="Сувениры" width="64" height="76">
           <h2 class="main-features">Сувениры</h2>
           <div class="features-description">Не только китайского<br> но и местного<br> производства!</div>
         </article>
@@ -72,51 +71,65 @@
       <section class="main-content photo-advantages">
         <article class="main-content-reason reason">
           <h2 class="main-features">Там есть мост дьявола</h2>
-          <div class="reason-number">№2</div>
+          <div class="reason-number">-№2-</div>
           <div class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
         </article>
         <div class="main-content-reason picture-2">
-          <img src="#" alt="фото моста дьявола" width="100" height="100">
+          <img src="img/photo-2.jpg" alt="Мост дьявола" width="800" height="256">
         </div>
       </section>
 
       <section class="main-content advantages">
         <article class="main-content-reason reason">
           <h2 class="main-features">Небольшая площадь</h2>
-          <div class="reason-number">№3</div>
+          <div class="reason-number">-№3-</div>
           <div class="features-description">Все достопримеча-<br>тельности находятся<br> очень близко</div>
         </article>
         <article class="main-content-reason reason">
           <h2 class="main-features">Красивая дорога</h2>
-          <div class="reason-number">№4</div>
+          <div class="reason-number">-№4-</div>
           <div class="features-description">Ехать в Седону из<br>Лас-Вегаса совсем<br> не скучно!</div>
         </article>
         <article class="main-content-reason reason">
           <h2 class="main-features">Мало туристов</h2>
-          <div class="reason-number">№5</div>
+          <div class="reason-number">-№5-</div>
           <div class="features-description">Большинство едет в<br>Гранд каньон<br> и толпится там</div>
         </article>
       </section>
 
-      <section class="main-content visit">
+      <section class="visit">
           <div class="interested">Заинтересовались?</div>
           <div class="features-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седона</div>
           <div class="search-btn-big">
             <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
               <div class="search-menu">
                 <form method="post" action="#">
-                  <label>Дата заезда:
-                    <input type="date" name="arrival-date">
-                  </label>
-                  <label>Дата выезда:
-                    <input type="date" name="departure-date">
-                  </label>
-                  <label>Взрослые:
-                    <input type="text" value="2">
-                  </label>
-                  <label>Дети:
-                    <input type="text" value="0">
-                  </label>
+                  <div class="form-positioner">
+                    <label for="arrival-date">Дата заезда:</label>
+                    <div class="icon-calendar"><img src="img/icon-calendar.png" alt="calendar" width="21" height="22"></div>
+                    <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+                  </div>
+
+                  <div class="form-positioner">
+                    <label for="departure-date">Дата выезда:</label>
+                    <div class="icon-calendar"><img src="img/icon-calendar.png" alt="calendar" width="21" height="22"></div>
+                    <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+                  </div>
+
+                  <div class="form-positioner">
+                    <label for="adult-count">Взрослые:</label>
+                    <div class="icon-min"><img src="img/min.png" alt="min" width="12" height="3"></div>
+                    <input type="text" value="2" id="adult-count">
+                    <div class="icon-plus"><img src="img/plus.png" alt="max" width="11" height="11"></div>
+                  </div>
+
+                  <div class="form-positioner">
+                    <label for="child-count">Дети:</label>
+                    <div class="icon-min"><img src="img/min.png" alt="min" width="12" height="3"></div>
+                    <input type="text" value="0" id="child-count">
+                    <div class="icon-plus"><img src="img/plus.png" alt="max" width="11" height="11"></div>
+                  </div>
+
                   <div class="search-btn-small">
                     <input type="submit" value="Найти">
                   </div>
@@ -126,12 +139,13 @@
       </section>
 
       <section class="main-content map">
-        <img src="#" alt="Карта местности" width="100" height="100">
+        <img src="img/map.jpg" alt="Карта местности" width="1200" height="593">
       </section>
     </main>
+
     <footer>
       <section class="footer-link">
-        <h2><a class="to-main-page" href="#">#VISITSEDONA</a></h2>
+        <p><a class="to-main-page" href="#">#VISITSEDONA</a></p>
       </section>
       <section class="footer-social">
         <a class="social-btn social-btn-twitter"></a>
@@ -140,8 +154,10 @@
       </section>
       <section class="footer-copyright">
         <p>Website by</p>
-        <div><img src="#" alt="logo htmlacademy"></div>
-        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <div>
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/html_academy_icon.png" alt="logo htmlacademy" width="113" height="39"></a>
+        </div>
       </section>
     </footer>
   </div>

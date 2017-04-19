@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: "PT Sans";
+    color: #00000;
+    text-transform: uppercase;
+}
+
+
+/*Изображения*/
+
+.positioner {
+  padding: 0;
+  margin: 0 40px;
+  width: 1200px;
+  min-height: 2760px;
+}
+
+.main-intro-photo {
+  height: 510px;
+  width: 1200px;
+  background-image: url("../img/mask.png"), url("../img/main-photo.jpg");
+  background-size: 100% 57px, cover;
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+}
+
+.social-btn {
+  background: url("../img/social-icon.png") no-repeat;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.social-btn-twitter {
+  background-position: 0 0;
+}
+
+.social-btn-facebook {
+  background-position: -52px 0;
+}
+
+.social-btn-youtube {
+  margin-right: 0;
+  background-position: -104px 0;
+}
+
+/*Шрифты*/
+
+.header-menu a,
+.search-menu label,
+.search-menu input {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.search-menu input {
+  color: #ffffff;
+}
+
+.main-features,
+.search-hotel {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.features-description,
+.reason-number {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+.interested {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.photo-advantages,
+.search-hotel {
+  color: #ffffff;
+}
+
+.main-header,
+.introduction,
+.search-form {
+  line-height: 26px;
+}
+
+.main-content {
+  line-height: 21px;
+}
+
+.to-main-page {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
