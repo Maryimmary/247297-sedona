@@ -15,22 +15,19 @@
 }
 
 body {
-    margin: 0;
-    background-color: #f2f2f2;
-    font-family: "PT Sans";
-    color: #00000;
-    text-transform: uppercase;
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
-
-
-/*Изображения*/
 
 .positioner {
   padding: 0;
   margin: 0 40px;
   width: 1200px;
-  min-height: 2760px;
 }
+
+/*Изображения*/
 
 .main-intro-photo {
   height: 510px;
@@ -62,51 +59,76 @@ body {
   background-position: -104px 0;
 }
 
-/*Шрифты*/
+.check-location {
+  background-image: url("../img/filter-background.jpg");
+  background-size: cover;
+  height: 562px;
+  width: 1200px;
+}
 
-.header-menu a,
-.search-menu label,
-.search-menu input {
+/*Шрифты*/
+.header-menu a {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
 }
 
-.search-menu input {
-  color: #ffffff;
+.main-features {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
 }
 
-.main-features,
-.search-hotel {
+.check-location h3{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  line-height: 21px;
+}
+
+
+
+/*
+.check-location label,
+.block-inputs input {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: 21px;
+}
+
+.sorting-block h2,
+.hotel-info h2 {
   font-size: 21px;
   font-weight: bold;
 }
 
-.features-description,
-.reason-number {
+.sorting-menu p,
+.sorting-menu a {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-menu a {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.hotel-info div {
+  color: rgb(51, 51, 51);
   font-size: 14px;
-  font-weight: normal;
-  line-height: 26px;
+  line-height: 21px;
 }
 
-.interested {
-  font-size: 30px;
+.hotel-info a {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
   font-weight: bold;
+  line-height: 21px;
 }
 
-.photo-advantages,
-.search-hotel {
-  color: #ffffff;
-}
-
-.main-header,
-.introduction,
-.search-form {
-  line-height: 26px;
-}
-
-.main-content {
+.rating {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
   line-height: 21px;
 }
 
@@ -116,3 +138,4 @@ body {
   font-weight: bold;
   line-height: 26px;
 }
+*/
