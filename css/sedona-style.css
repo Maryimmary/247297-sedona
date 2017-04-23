@@ -15,19 +15,25 @@
 }
 
 body {
-  margin: 0;
   background-color: #f2f2f2;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+
 }
 
 .positioner {
+  background-color: pink;
   padding: 0;
   margin: 0 40px;
   width: 1200px;
+  position: relative;
+  margin-top: -16px; /*Я не понимаю, почему у меня страница съезжает вниз?
+  Только отрицатиельнвым маргином получилось ее поднять*/
 }
 
-/*Изображения*/
+/*ИЗОБРАЖЕНИЯ*/
 
 .main-intro-photo {
   height: 510px;
@@ -66,7 +72,8 @@ body {
   width: 1200px;
 }
 
-/*Шрифты*/
+/*ШРИФТЫ*/
+
 .header-menu a {
   font-size: 14px;
   font-weight: bold;
@@ -86,6 +93,324 @@ body {
   color: rgb(255, 255, 255);
   line-height: 21px;
 }
+
+
+/*СЕТКА*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 56px;
+  box-sizing: border-box;;
+}
+
+.header-menu li:nth-child(-n+2) {
+  width: 239px;
+  float: left;
+}
+
+.header-menu li:nth-child(n+3) {
+  width: 239px;
+  float: right;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 530px;
+  z-index: 10;
+}
+
+/*ПЕРВАЯ СТРАНИЦА - основное содержание*/
+
+/*секция 1*/
+
+.main-intro {
+  padding: 0;
+  margin: 0;
+}
+
+.introduction {
+  margin: 0;
+
+}
+
+.introduction .main-features {
+  margin: 55px auto 25px;
+  width: 636px;
+}
+
+.introduction .features-description {
+  margin: 0 auto 55px;
+  width: 576px;
+}
+
+
+/*Cекция 2*/
+section {
+  margin: 0;
+  padding: 0;
+}
+
+section:nth-of-type(3) .reason {
+  float: left;
+  width: 400px;
+  min-height: 256px;
+  background-color: rgb(129, 179, 210);
+}
+
+section:nth-of-type(3) .picture-1 {
+  float: right;
+  width: 800px;
+  min-height: 256px;
+}
+
+/*Cекция 3*/
+
+.bonuses {
+  min-height: 325px;
+}
+
+.bonuses .feature {
+  width: 400px;
+  height: 310px;
+}
+
+.bonuses .feature:nth-child(-n+2) {
+  float: left;
+}
+
+.bonuses .feature:nth-child(3) {
+  float: right;
+}
+
+/*секция 4*/
+
+section:nth-of-type(5) .reason {
+  float: right;
+  width: 400px;
+  min-height: 256px;
+  background-color: rgb(129, 179, 210);
+}
+
+section:nth-of-type(5) .picture-2 {
+  float: left;
+  width: 800px;
+  min-height: 256px;
+}
+
+/*Секция 5*/
+
+.advantages .reason {
+  float: left;
+  width: 400px;
+  height: 256px;
+}
+
+/*Сеция 6*/
+
+.visit {
+  min-height: 290px;
+  width: 1200px;
+  background: #ffff;
+  box-sizing: border-box;
+  padding-top: 55px;
+}
+
+.visit .interested,
+.visit .features-description {
+  width: 465px;
+  margin: auto;
+  outline: 2px solid red;
+}
+
+.visit .features-description {
+  margin-top: 60px;
+}
+
+
+.search-hotel {
+  width: 568px;
+  height: 86px;
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+/*Секция 7*/
+
+.map {
+  height: 593px;
+}
+
+.search-menu {
+  display: none;
+}
+
+footer {
+  height: 120px;
+  width: 1200px;
+  background: #f9fbf6;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+footer .footer-link {
+  float: left;
+  min-height: 50px;
+  width: 136px;
+  margin-left: 132px;
+}
+
+footer .footer-social {
+  float: left;
+  min-height: 50px;
+  width: 160px;
+  margin-left: 256px;
+
+}
+
+footer .footer-copyright {
+  float: right;
+  min-height: 50px;
+  width: 195px;
+  margin-right: 103px;
+}
+
+
+/*СТРАНИЦА ВТОРАЯ*/
+
+.check-location {
+  height: 220px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.check-infrastructure {
+  height: 180px;
+  width: 200px;
+  float: left;
+  outline: 1px solid red;
+}
+
+.check-residence {
+  height: 180px;
+  width: 200px;
+  float: left;
+  margin-left: 55px;
+}
+
+.check-price {
+  height: 180px;
+  width: 350px;
+  float: right;
+  margin-right: 43px;
+}
+
+/*Блок сортировки*/
+
+.sorting-block {
+  height: 84px;
+  width: 1056px;
+  margin: auto;
+  box-sizing: border-box;
+  outline: 2px solid red;
+}
+
+ .sorting-block h2 {
+   float: left;
+   outline: 1px solid red;
+ }
+
+ .sorting-menu {
+   float: left;
+ }
+
+.sorting-arrow {
+  float: right;
+}
+
+.sorting-menu p,
+.sorting-menu a {
+  display: inline-block;
+  outline: 1px solid red;
+  margin-left: 20px;
+  margin-top: 28px;
+}
+.sorting-menu a:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.sorting-arrow a {
+  display: inline-block;
+  outline: 1px solid red;
+  margin-top: 28px;
+}
+
+/*Блок отелей*/
+
+.hotel-features {
+  min-height: 150px;
+  outline: 1px solid black;
+  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.hotel-features .hotel-photo {
+  float: left;
+}
+
+.hotel-features .hotel-info {
+  float: left;
+}
+
+.hotel-features .hotel-rating {
+  float: right;
+}
+
+.hotel-photo {
+  margin-top: 30px;
+}
+
+.hotel-info div {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
