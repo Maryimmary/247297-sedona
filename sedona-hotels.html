@@ -9,7 +9,7 @@
   <div class="positioner">
     <header class="main-header">
       <div class="logo">
-        <a href="/sedona-index.html"><img src="img/logo.png" alt="logo" width="138" height="70"></a>
+        <a href="/index.html"><img src="img/logo.png" alt="logo" width="138" height="70"></a>
       </div>
       <nav class="header-menu">
         <ul>
@@ -20,52 +20,48 @@
             <a href="#">Фото и видео</a>
           </li>
           <li>
-            <a href="#">Карта штата</a>
+            <a href="#">Гостиницы</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="#">Карта штата</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="check-location clearfix">
-        <form method="post" action="#">
+        <form class="sedona-hotels-for" method="post" action="#">
           <div class="check-infrastructure">
             <h3>Инфраструктура:</h3>
-            <label>
-              <input type="checkbox" name="swimingpool" checked>Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking">Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wi-fi">Wi-Fi
-            </label>
+            <input type="checkbox" name="swimingpool" for="swimingpool" checked>
+            <label for="swimingpool">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
           </div>
           <div class="check-residence">
             <h3>Тип жилья:</h3>
-            <label>
-              <input type="checkbox" name="hotel" checked>Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="motel" checked>Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="apartments" checked>Апартаменты
-            </label>
+            <input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" name="apartments" id="apartments" checked>
+            <label for="apartments">Апартаменты</label>
           </div>
           <div class="check-price">
             <h3>Стоимость в сутки (Р):</h3>
             <div class="block-inputs">
-              <label>От <input type="text" value="0"></label>
-              <label>До <input type="text" value="300"></label>
+              <label><div>От</div><input type="text" value="0"></label>
+              <label><div>До</div><input type="text" value="3000"></label>
             </div>
             <div class="block-range">
-                <!--<input type="range" name="count" min="0" max="4000" step="1" id="count">-->
+              <div class="line">
+                <div class="range range-1"></div>
+                <div class="range range-2"></div>
+              </div>
             </div>
             <input type="submit" value="Показать">
-          </div>
         </form>
       </section>
 
@@ -91,7 +87,7 @@
           <div class="hotel-info">
             <h2>Amara resort & spa </h2>
             <div class="type-hotel">Гостиница</div>
-            <div class="info-price">От 4000 Р.</div>
+            <div class="info-price">От 4000 Р.</div><br>
             <div class="btn-details"><a href="#">Подробнее</a></div>
             <div class="btn-reservation"><a href="#">Забронировать</a></div>
           </div>
@@ -100,20 +96,21 @@
             <div class="rating">Рейтинг: 8,5</div>
           </div>
         </article>
+
         <article class="hotel-features clearfix">
           <div class="hotel-photo">
             <img src="img/hotel-2.jpg" alt="Desert Quail inn" width="135" height="90">
           </div>
-            <div class="hotel-info">
-              <h2>Desert Quail inn</h2>
-              <div class="type-hotel">Отель</div>
-              <div class="info-price">От 3000 Р.</div>
-              <div class="btn-details"><a href="#">Подробнее</a></div>
-              <div class="btn-reservation"><a href="#">Забронировать</a></div>
-            </div>
+          <div class="hotel-info">
+            <h2>Desert Quail inn</h2>
+            <div class="type-hotel">Отель</div>
+            <div class="info-price">От 3000 Р.</div><br>
+            <div class="btn-details"><a href="#">Подробнее</a></div>
+            <div class="btn-reservation"><a href="#">Забронировать</a></div>
+          </div>
             <div class="hotel-rating">
               <div class="stars"><img src="img/stars-3.png" alt="3-stars" width="65" height="17"></div>
-              <div class="rating">Рейтинг: 8,5</div>
+              <div class="rating">Рейтинг: 8,9</div>
             </div>
         </article>
 
@@ -124,13 +121,13 @@
             <div class="hotel-info">
               <h2>Villas at poco diablo</h2>
               <div class="type-hotel">Апартаменты</div>
-              <div class="info-price">От 2000 Р.</div>
+              <div class="info-price">От 2000 Р.</div><br>
               <div class="btn-details"><a href="#">Подробнее</a></div>
               <div class="btn-reservation"><a href="#">Забронировать</a></div>
             </div>
             <div class="hotel-rating">
               <div class="stars"><img src="img/stars-2.png" alt="2-stars" width="42" height="17"></div>
-              <div class="rating">Рейтинг: 8,5</div>
+              <div class="rating">Рейтинг: 9,2</div>
             </div>
         </article>
       </section>
@@ -146,8 +143,9 @@
         <a class="social-btn social-btn-youtube"></a>
       </section>
       <section class="footer-copyright">
+        <p>Website by</p>
         <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/html_academy_icon_and_text.png" alt="logo htmlacademy" width="195" height="39">
+          <img src="img/html_academy_icon.png" alt="logo htmlacademy" width="113" height="39">
         </a>
       </section>
     </footer>
