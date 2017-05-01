@@ -45,7 +45,7 @@ body {
 }
 
 .social-btn {
-  background: url("../img/social-icon.png") no-repeat;
+  background: #81b3d2 url("../img/social-icon.png") no-repeat;
   width: 46px;
   height: 48px;
   margin-right: 3px;
@@ -53,16 +53,16 @@ body {
 }
 
 .social-btn-twitter {
-  background-position: 0 0;
+  background-position: 15px 12px;
 }
 
 .social-btn-facebook {
-  background-position: -52px 0;
+  background-position: -38px 12px;
 }
 
 .social-btn-youtube {
   margin-right: 0;
-  background-position: -104px 0;
+  background-position: -89px 12px;
 }
 
 /*ШРИФТЫ*/
@@ -83,7 +83,7 @@ body {
 .check-location h3 {
   font-size: 16px;
   font-weight: bold;
-  color: #ffff;
+  color: #ffffff;
 }
 
 /*СЕТКА*/
@@ -101,7 +101,7 @@ body {
   position: relative;
   height: 56px;
   box-sizing: border-box;
-  background: #ffff;
+  background: #ffffff;
 }
 
 .header-menu ul {
@@ -209,6 +209,10 @@ section:nth-of-type(3) .picture-1 {
 }
 
 /*текст секций PHOTO-ADVANTAGES*/
+.main-content-reason img {
+  display: block;
+}
+
 .photo-advantages .reason .main-features {
   margin-top: 45px;
   text-align: center;
@@ -310,9 +314,8 @@ section:nth-of-type(5) .picture-2 {
 /*Сеция 6*/
 
 .visit {
-  min-height: 290px;
   width: 1200px;
-  background: #ffff;
+  background: #ffffff;
   box-sizing: border-box;
   padding-top: 43px;
 }
@@ -358,7 +361,7 @@ section:nth-of-type(5) .picture-2 {
   z-index: 10;
   height: 395px;
   width: 568px;
-  background-color: #ffff;
+  background-color: #ffffff;
   box-sizing: border-box;
   padding: 53px;
   box-shadow: 5px 0 15px 0 rgb(0, 1, 1, 0.2),
@@ -425,42 +428,9 @@ section:nth-of-type(5) .picture-2 {
    background-position: center;
   }
 
-.form-positioner:nth-child(3) {
+.form-positioner:nth-child(n+3) {
   float: left;
   width: 230px;
-  position: relative;
-}
-
-.form-positioner:nth-child(3)::before,
-.form-positioner:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 3px;
-  top: 17px;
-  right: 90px;
-  z-index: 11;
-  background-image: url("../img/min.png");
-  background-position: center;
-}
-
-.form-positioner:nth-child(3)::after,
-.form-positioner:nth-child(4)::after {
-  content: "";
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  top: 14px;
-  right: 15px;
-  z-index: 11;
-  background-image: url("../img/plus.png");
-  background-position: center;
-}
-
-.form-positioner:nth-child(4) {
-  float: right;
-  width: 230px;
-  position: relative;
 }
 
 label[for$="count"] {
@@ -472,12 +442,25 @@ label[for$="count"] {
 }
 
 label[for="child-count"] {
-  padding: 10px 50px;
+  padding-left: 53px;
+}
+
+.popup-form-count {
+  float: right;
+  margin-right: -2px;
+}
+
+.popup-form-count:first-of-type {
+  padding-right: 2px;
+}
+
+.popup-form-count input {
+  margin-left: -4px;
+  margin-right: -3px;
 }
 
 input[name$="count"] {
-  float: right;
-  width: 115px;
+  width: 38px;
   height: 38px;
   font-size: 14px;
   font-weight: bold;
@@ -487,6 +470,17 @@ input[name$="count"] {
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
+}
+
+.popup-form-count button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #a9a9a9;
+  margin-top: -2px;
+  background-color: #f2f2f2;
 }
 
 .search-btn-small {
@@ -513,7 +507,7 @@ input[name$="count"] {
 }
 
 .form-positioner input:focus {
-  background-color: #ffff;
+  background-color: #ffffff;
   border: 2px solid #ebebeb;
 }
 
@@ -641,7 +635,7 @@ footer .footer-copyright {
   margin-top: 24px;
   padding-left: 40px;
   position: relative;
-  color: #ffff;
+  color: #ffffff;
 }
 
 .check-infrastructure input,
@@ -652,12 +646,12 @@ footer .footer-copyright {
 .check-infrastructure input + label:before,
 .check-residence input + label:before  {
   content: "";
-  width: 17px;
-  height: 17px;
-  border: 2px solid #ffff;
-  border-radius: 3px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/checkbox-not-checked.png");
+  background-position: center;
   position: absolute;
-  left: 1px;
+  left: 0;
 }
 
 .check-infrastructure input:checked + label:before,
@@ -669,7 +663,6 @@ footer .footer-copyright {
   background-position: center;
   position: absolute;
   left: 0;
-  border: none;
 }
 
 .check-infrastructure input:disabled + label:before,
@@ -678,7 +671,7 @@ footer .footer-copyright {
 }
 
 .block-inputs {
-  border: 2px solid #ffff;
+  border: 2px solid #ffffff;
   border-radius: 3px;
   margin: -5px auto;
   height: 32px;
@@ -690,7 +683,7 @@ footer .footer-copyright {
   content: "|";
   position: absolute;
   left: 156px;
-  color: #ffff;
+  color: #ffffff;
   font-size: 25px;
   bottom: 2px;
 }
@@ -713,7 +706,7 @@ footer .footer-copyright {
   height: 27px;
   font-size: 14px;
   background-color: transparent;
-  color: #ffff;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -727,7 +720,7 @@ footer .footer-copyright {
   height: 32px;
   margin-right: 3px;
   padding-top: 4px;
-  color: #ffff;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -750,7 +743,7 @@ footer .footer-copyright {
   width: 5px;
   height: 4px;
   border-radius: 50%;
-  border: 7px solid #ffff;
+  border: 7px solid #ffffff;
   position: absolute;
   cursor: pointer;
 }
@@ -775,9 +768,9 @@ footer .footer-copyright {
   width: 137px;
   height: 37px;
   box-sizing: border-box;
-  border: 2px solid #ffff;
+  border: 2px solid #ffffff;
   border-radius: 3px;
-  color: #ffff;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -785,7 +778,7 @@ footer .footer-copyright {
 }
 
 .check-location input[type="submit"]:hover {
-  background-color: #ffff;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -859,7 +852,7 @@ footer .footer-copyright {
 .arrow::before {
   content: "";
   display: inline-block;
-  border: 11px solid #cccc;
+  border: 11px solid #cccccc;
   border-right-width: 6px;
   border-left-width: 6px;
   border-right-color: transparent;
@@ -954,7 +947,7 @@ footer .footer-copyright {
 
 [class^="btn-"] a {
   font-size: 14px;
-  color: #ffff;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   vertical-align: middle;

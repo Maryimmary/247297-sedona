@@ -12,21 +12,21 @@
         <a href="#"><img src="img/logo.png" alt="logo" width="138" height="70"></a>
       </div>
       <nav class="header-menu">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-          </ul>
-        </nav>
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="sedona-hotels.html">Гостиницы</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="main-intro">
@@ -98,44 +98,46 @@
       </section>
 
       <section class="main-content visit">
-          <div class="interested">Заинтересовались?</div>
-          <div class="features-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седона</div>
-          <div class="search-btn-big">
-            <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
-              <div class="search-menu">
-                <form class="index-form" method="post" action="#">
-                  <div class="form-positioner">
-                    <label for="arrival-date">Дата заезда:</label>
-                    <!--<div class="icon-calendar"><img src="img/icon-calendar.png" alt="calendar" width="21" height="22"></div>-->
-                    <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
-                  </div>
-
-                  <div class="form-positioner">
-                    <label for="departure-date">Дата выезда:</label>
-                    <!--<div class="icon-calendar"><img src="img/icon-calendar.png" alt="calendar" width="21" height="22"></div>-->
-                    <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
-                  </div>
-
-                  <div class="form-positioner">
-                    <label for="adult-count">Взрослые:</label>
-                    <!--<div class="icon-min"><img src="img/min.png" alt="min" width="12" height="3"></div>-->
-                    <input type="text" value="2" id="adult-count" name="child-count">
-                      <!--<div class="icon-plus"><img src="img/plus.png" alt="max" width="11" height="11"></div>-->
-                  </div>
-
-                  <div class="form-positioner">
-                    <label for="child-count">Дети:</label>
-                    <!--<div class="icon-min"><img src="img/min.png" alt="min" width="12" height="3"></div>-->
-                    <input type="text" value="0" id="child-count" name="child-count">
-                    <!--<div class="icon-plus"><img src="img/plus.png" alt="max" width="11" height="11"></div>-->
-                  </div>
-
-                  <div class="search-btn-small">
-                    <input type="submit" value="Найти">
-                  </div>
-                </form>
+        <div class="interested">Заинтересовались?</div>
+        <div class="features-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седона</div>
+        <div class="search-btn-big">
+          <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
+          <div class="search-menu">
+            <form class="index-form" method="post" action="#">
+              <div class="form-positioner">
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
               </div>
+
+              <div class="form-positioner">
+                <label for="departure-date">Дата выезда:</label>
+                <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+              </div>
+
+              <div class="form-positioner">
+                <label for="adult-count">Взрослые:</label>
+                <div class="popup-form-count">
+                  <button type="button">-</button>
+                  <input type="text" value="2" id="adult-count" name="child-count">
+                  <button type="button">+</button>
+                </div>
+              </div>
+
+              <div class="form-positioner">
+                <label for="child-count">Дети:</label>
+                <div class="popup-form-count">
+                  <button type="button">-</button>
+                  <input type="text" value="0" id="child-count" name="child-count">
+                  <button type="button">+</button>
+                </div>
+              </div>
+
+              <div class="search-btn-small">
+                <input type="submit" value="Найти">
+              </div>
+            </form>
           </div>
+        </div>
       </section>
 
       <section class="main-content map">
