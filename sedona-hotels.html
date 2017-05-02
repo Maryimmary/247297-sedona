@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/sedona-style.css">
   </head>
   <body>
@@ -20,7 +21,7 @@
             <a href="#">Фото и видео</a>
           </li>
           <li>
-            <a href="sedona-hotels.html">Гостиницы</a>
+            <a>Гостиницы</a>
           </li>
           <li>
             <a href="#">Карта штата</a>
@@ -49,17 +50,19 @@
             <input type="checkbox" name="apartments" id="apartments" checked>
             <label for="apartments">Апартаменты</label>
           </div>
+
           <div class="check-price">
             <h3>Стоимость в сутки (Р):</h3>
             <div class="block-inputs">
-              <label><div>От</div><input type="text" value="0"></label>
-              <label><div>До</div><input type="text" value="3000"></label>
+              <label class="min-price">От<input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До<input type="text" name="max-price" value="3000"></label>
             </div>
             <div class="block-range">
-              <div class="line">
-                <div class="range range-1"></div>
-                <div class="range range-2"></div>
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
             <input type="submit" value="Показать">
           </div>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/sedona-style.css">
   </head>
   <body>
@@ -117,18 +118,18 @@
               <div class="form-positioner">
                 <label for="adult-count">Взрослые:</label>
                 <div class="popup-form-count">
-                  <button type="button">-</button>
+                  <button type="button" class="button-min"></button>
                   <input type="text" value="2" id="adult-count" name="child-count">
-                  <button type="button">+</button>
+                  <button type="button" class="button-max"></button>
                 </div>
               </div>
 
               <div class="form-positioner">
                 <label for="child-count">Дети:</label>
                 <div class="popup-form-count">
-                  <button type="button">-</button>
+                  <button type="button" class="button-min"></button>
                   <input type="text" value="0" id="child-count" name="child-count">
-                  <button type="button">+</button>
+                  <button type="button" class="button-max"></button>
                 </div>
               </div>
 
