@@ -512,18 +512,6 @@ input[name$="count"] {
   border: 2px solid #ebebeb;
 }
 
-/*тут опять не получилось с псевдоклассом*/
-.form-positioner::after:hover,
-.form-positioner::before:hover {
-  background-color: #000000;
-}
-
-.form-positioner::after:active,
-.form-positioner::before:active {
-  background-color: #7bbbd7;
-}
-
-
 .search-btn-small input:hover {
   background-color: #669ec1;
 }
@@ -880,11 +868,11 @@ footer .footer-copyright {
 }
 /* НИЧЕГО НЕ ПОЛУЧИЛОСЬ- ЦВЕТ НЕ МЕНЯЕТСЯ*/
 .arrow::before:hover {
-  border: 11px solid #040404;
+  border-color: #040404;
 }
 
 .arrow::before:active {
-  border: 11px solid #86acd9;
+  border-color: #86acd9;
 }
 
 /*Блок отелей*/
