@@ -321,6 +321,7 @@ section:nth-of-type(5) .picture-2 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+
 }
 
 .visit .features-description {
@@ -332,6 +333,8 @@ section:nth-of-type(5) .picture-2 {
 
 .search-hotel {
   display: block;
+  position: relative;
+  z-index: 11;
   width: 568px;
   height: 86px;
   background-color: #766357;
@@ -354,7 +357,7 @@ section:nth-of-type(5) .picture-2 {
 
  .search-menu {
   position: absolute;
-  /*display: none;*/
+  display: none;
   top: 87px;
   left: 0;
   z-index: 10;
@@ -367,9 +370,32 @@ section:nth-of-type(5) .picture-2 {
               -5px 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-/*.search-btn-big:hover .search-menu {
+.search-menu-show {
   display: block;
-}*/
+  animation-name: bounce, opacity;
+  animation-duration: 1s, 1s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-395px);
+  }
+  100%  {
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacity {
+  0%   {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100%  {
+      opacity: 1;
+  }
+}
 
 .index-form {
   padding: 0;
