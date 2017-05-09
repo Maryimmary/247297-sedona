@@ -15,11 +15,11 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background-color: #f2f2f2;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
 }
 
 .positioner {
@@ -41,6 +41,7 @@ body {
   background-size: 100% 57px, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
+  background-color: #314852;
 }
 
 
@@ -88,7 +89,7 @@ body {
 
 .main-header {
   width: 1200px;
-  padding: 0;
+  padding: 0 6%;
   margin: 0;
   position: relative;
   height: 56px;
@@ -110,28 +111,14 @@ body {
   width: 239px;
   float: left;
   list-style: none;
-}
-
-.header-menu li:first-child {
-  padding-left: 70px;
-}
-
-.header-menu li:nth-child(2){
-  padding-left: 72px;
+  text-align: left;
 }
 
 .header-menu li:nth-child(n+3) {
   width: 239px;
   float: right;
   list-style: none;
-}
-
-.header-menu li:nth-child(3) {
-  padding-left: 86px;
-}
-
-.header-menu li:last-child {
-  padding-left: 76px;
+  text-align: right;
 }
 
 .header-menu li a {
@@ -164,7 +151,7 @@ body {
 }
 
 .introduction .main-features {
-  margin: 0 auto 25px;
+  margin: 0 auto 30px;
   width: 636px;
   text-align: center;
 }
@@ -172,9 +159,9 @@ body {
 .introduction .features-description {
   margin: auto;
   width: 576px;
-  font-size: 14px;
   line-height: 26px;
   text-align: center;
+  font-size: 14px;
 }
 
 
@@ -229,16 +216,15 @@ section:nth-of-type(3) .picture-1 {
 }
 
 /*Cекция 3*/
-
 .bonuses {
   min-height: 330px;
   background-color: #ffffff;
 }
 
 .bonuses .feature {
+  float: left;
   width: 400px;
   height: 310px;
-  float: left;
 }
 
 .bonuses img {
@@ -253,14 +239,15 @@ section:nth-of-type(3) .picture-1 {
 
 .bonuses .main-features {
   text-align: center;
-  margin-top: 25px;
   line-height: 28px;
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 22px;
 }
 
 .bonuses .features-description {
   text-align: center;
   font-size: 14px;
+  line-height: 21px;
 }
 
 /*секция 4*/
@@ -302,14 +289,13 @@ section:nth-of-type(5) .picture-2 {
 }
 
 .advantages .features-description {
-  margin-top: 20px;
+  margin-top: 22px;
   text-align: center;
   line-height: 21px;
   font-size: 14px;
 }
 
 /*Сеция 6*/
-
 .visit {
   width: 1200px;
   background: #ffffff;
@@ -326,8 +312,8 @@ section:nth-of-type(5) .picture-2 {
 .visit .features-description {
   margin-top: 23px;
   text-align: center;
-  font-size: 14px;
   line-height: 24px;
+  font-size: 14px;
 }
 
 .search-hotel {
@@ -338,12 +324,12 @@ section:nth-of-type(5) .picture-2 {
   height: 86px;
   background-color: #766357;
   color: #ffffff;
-  font-size: 21px;
-  font-weight: bold;
-  text-align: center;
   box-sizing: border-box;
   margin: 48px auto 0;
   padding-top: 30px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -355,13 +341,13 @@ section:nth-of-type(5) .picture-2 {
 }
 
  .search-menu {
-  position: absolute;
   display: none;
+  position: absolute;
+  z-index: 10;
   top: 87px;
   left: 0;
-  z-index: 10;
-  height: 395px;
   width: 568px;
+  height: 395px;
   background-color: #ffffff;
   box-sizing: border-box;
   padding: 53px;
@@ -404,39 +390,39 @@ section:nth-of-type(5) .picture-2 {
 }
 
 .form-positioner {
+   position: relative;
    padding: 0;
    margin: 0;
+   margin-bottom: 29px;
    height: 38px;
    font-size: 14px;
    font-weight: bold;
-   margin-bottom: 29px;
-   position: relative;
- }
+}
 
  label[for$="date"] {
    float: left;
    width: 100px;
    height: 38px;
+   padding: 10px 3px;
+   box-sizing: border-box;
    text-align: left;
    vertical-align: middle;
-   box-sizing: border-box;
-   padding: 10px 3px;
- }
+}
 
  input[name$="date"] {
    float: right;
    width: 346px;
    height: 38px;
+   padding: 5px 35px 5px 10px;
+   box-sizing: border-box;
    font-size: 14px;
    font-weight: bold;
    text-transform: uppercase;
-   padding: 5px 35px 5px 10px;
-   box-sizing: border-box;
    background-image: url("../img/icon-calendar.png");
    background-repeat: no-repeat;
    background-position: 317px 50%;
-   border: 2px solid transparent;
    background-color: #f2f2f2;
+   border: 2px solid transparent;
 }
 
 input[name$="date"]:hover {
@@ -456,8 +442,8 @@ label[for$="count"] {
   float: left;
   width: 98px;
   height: 38px;
-  box-sizing: border-box;
   padding: 10px 3px;
+  box-sizing: border-box;
 }
 
 label[for="child-count"] {
@@ -475,31 +461,32 @@ label[for="child-count"] {
 }
 
 input[name$="count"] {
-  margin: 0 -3px 0 -3px;
   width: 38px;
   height: 38px;
+  margin: 0 -3px 0 -3px;
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: bold;
-  background: #f2f2f2;
   text-transform: uppercase;
   text-align: center;
   vertical-align: top;
-  box-sizing: border-box;
+  background: #f2f2f2;
   border: none;
 }
 
 .popup-form-count button {
   display: inline-block;
-  margin: 0;
   width: 38px;
   height: 38px;
-  border: none;
+  margin: 0;
   font-size: 20px;
   line-height: 0px;
   font-weight: bold;
   background-color: #f2f2f2;
   color: #a9a9a9;
+  border: none;
   outline: none;
+  vertical-align: middle;
 }
 
 .button-min {
@@ -522,7 +509,6 @@ input[name$="count"] {
   background-image: url("../img/max-hover.png");
 }
 
-
 .button-min:active {
   background-image: url("../img/min-active.png");
 }
@@ -538,9 +524,9 @@ input[name$="count"] {
 
 .search-btn-small input {
   width: 100%;
+  height: 58px;
   margin: 0;
   text-align: center;
-  height: 58px;
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
@@ -575,12 +561,9 @@ input[name$="count"] {
 
 /*ФУТЕР*/
 footer {
-  height: 120px;
   width: 1200px;
   background: #f9fbf6;
   box-sizing: border-box;
-  padding-top: 35px;
-  padding-bottom: 35px;
 }
 
 .main-footer {
@@ -591,31 +574,38 @@ footer {
   opacity: 0.902;
 }
 
-footer .footer-link a {
+footer .footer-link {
   float: left;
-  min-height: 50px;
-  width: 136px;
-  margin-left: 132px;
-  padding-top: 12px;
+  width: 400px;
+  min-height: 120px;
+  text-align: center;
+}
+
+footer .footer-link a {
+  padding: 0;
   font-size: 21px;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+  line-height: 120px;
 }
 
 footer .footer-social {
   float: left;
-  min-height: 50px;
-  width: 160px;
-  margin-left: 256px;
+  width: 400px;
+  min-height: 120px;
+  text-align: center;
 }
 
 .social-btn {
   background: #81b3d2 url("../img/social-icon.png") no-repeat;
+  opacity: 1;
   width: 46px;
   height: 48px;
-  margin-right: 3px;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: 38px;
+  font-size: 0;
 }
 
 .social-btn-twitter {
@@ -624,10 +614,11 @@ footer .footer-social {
 
 .social-btn-facebook {
   background-position: -38px 12px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .social-btn-youtube {
-  margin-right: 0;
   background-position: -89px 12px;
 }
 
@@ -644,20 +635,24 @@ footer .footer-social {
 }
 
 .social-btn-facebook:active {
-  background-position: -38px 12px;
+  background-position: -39px 12px;
 }
 
 .social-btn-youtube:active {
-  margin-right: 0;
-  background-position: -89px 12px;
+  background-position: -90px 12px;
 }
 
 footer .footer-copyright {
   float: right;
-  min-height: 50px;
-  width: 225px;
-  margin-right: 75px;
-  padding-top: 5px;
+  width: 400px;
+  min-height: 120px;
+  text-align: center;
+}
+
+.footer-copyright > * {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 90px;
 }
 
 .footer-copyright p {
@@ -666,15 +661,11 @@ footer .footer-copyright {
   margin-right: 6px;
 }
 
-.footer-copyright > *  {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .footer-copyright a {
   width: 113px;
   height: 39px;
-  background-image: url("../img/html_academy_icon.png")
+  background-image: url("../img/html_academy_icon.png");
+  font-size: 0;
 }
 
 
@@ -696,7 +687,7 @@ footer .footer-copyright {
   width: 1200px;
   overflow: hidden;
   box-sizing: border-box;
-  padding: 10px 70px;
+  padding: 10px 6%;
 }
 
 .check-location > * {
@@ -704,32 +695,32 @@ footer .footer-copyright {
 }
 
 .check-infrastructure {
+  float: left;
   height: 180px;
   width: 200px;
-  float: left;
 }
 
 .check-residence {
+  float: left;
   height: 180px;
   width: 200px;
-  float: left;
   margin-left: 55px;
 }
 
 .check-price {
-  box-sizing: border-box;
   float: right;
   height: 180px;
   width: 330px;
-  padding-left: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 .check-infrastructure label,
 .check-residence label  {
-  display: block;
-  margin-top: 27px;
-  padding-left: 40px;
   position: relative;
+  display: block;
+  margin-top: 28px;
+  padding-left: 40px;
   color: #ffffff;
 }
 
@@ -762,7 +753,12 @@ footer .footer-copyright {
 
 .check-infrastructure input:disabled + label:before,
 .check-residence input:disabled + label:before  {
-  background-color: #6b6d6c
+  background-image: url("../img/checkbox-disabled.png");
+}
+
+.check-infrastructure input:checked:disabled + label:before,
+.check-residence input:checked:disabled + label:before  {
+  background-image: url("../img/checkbox-checked-disabled.png");
 }
 
 .check-price h3 {
@@ -773,22 +769,22 @@ footer .footer-copyright {
 }
 
 .block-inputs {
+  width: 314px;
+  height: 35px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   margin-bottom: 20px;
-  height: 36px;
-  width: 314px;
   position: relative;
   font-size: 0px;
 }
 
 .block-inputs::before {
   content: "";
+  width: 2px;
+  height: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 22px;
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -802,7 +798,6 @@ footer .footer-copyright {
   cursor: pointer;
 }
 
-
 .block-inputs .min-price,
 .block-inputs .max-price {
   width: 90px;
@@ -812,15 +807,14 @@ footer .footer-copyright {
 .block-inputs input {
   width: 50px;
   margin: 0;
+  padding-left: 5px;
   color: inherit;
   font: inherit;
   background: none;
   border: none;
-  padding-left: 5px;
   outline: none;
 }
 
-/*----------------------*/
 .block-range {
   position: relative;
   margin-bottom: 32px;
@@ -862,15 +856,15 @@ footer .footer-copyright {
 }
 
 .check-location input[type="submit"] {
-  box-sizing: border-box;
   display: block;
+  height: 32px;
+  width: 133px;
   margin-bottom: 0;
   margin-left: 85px;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  height: 32px;
-  width: 133px;
   text-transform: uppercase;
   background: transparent;
   border: 2px solid #ffffff;
@@ -881,44 +875,45 @@ footer .footer-copyright {
 .check-location input[type="submit"]:hover {
   background-color: #ffffff;
   color: #000000;
+  outline: none;
 }
 
 /*Блок сортировки*/
-
 .sorting-block {
-  background-color: #fefefe;
-  border-bottom: 1px solid #e5e5e5;
   height: 84px;
   width: 1200px;
   margin: auto;
+  padding-left: 6%;
+  padding-right: 6%;
   box-sizing: border-box;
-  padding-left: 70px;
-  padding-right: 70px;
+  background-color: #fefefe;
+  border-bottom: 1px solid #e5e5e5;
 }
 
- .sorting-block h2 {
-   float: left;
-   font-size: 21px;
-   font-weight: bold;
-   margin-top: 25px;
- }
+.sorting-block h2 {
+  float: left;
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: bold;
+}
 
- .sorting-menu {
-   padding-left: 20px;
-   float: left;
-   font-size: 12px;
-   margin-top: 5px;
-  }
+.sorting-menu {
+  float: left;
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: 12px;
+}
 
 .sorting-arrow {
   float: right;
+  margin-top: 32px;
 }
 
 .sorting-menu p,
 .sorting-menu a {
   display: inline-block;
-  margin-left: 25px;
-  margin-top: 28px;
+  margin-left: 23px;
+  margin-top: 30px;
   text-decoration: none;
   color: #000000;
 }
@@ -928,34 +923,27 @@ footer .footer-copyright {
 }
 
 .sorting-menu a:not(:first-of-type) {
-  margin-left: 23px;
+  margin-left: 25px;
   border-bottom: 1px dashed #81b3d2;
   color: #b2b2b2;
 }
-
 
 .sorting-menu a:hover {
   color: #81b3d2;
 }
 
 .sorting-menu a:active {
-  color: #000000;
   border-bottom: none;
+  color: #000000;
 }
-
 
 .sorting-menu p {
   margin-right: 20px;
 }
 
-.sorting-arrow {
-  margin-top: 30px;
-}
-
 .sorting-arrow a {
-  margin-top: 28px;
   font-size: 0;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .arrow::before {
@@ -987,14 +975,13 @@ footer .footer-copyright {
 }
 
 /*Блок отелей*/
-
 .hotel-features {
+  width: 1056px;
   min-height: 150px;
+  padding-right: 6%;
+  padding-left: 6%;
   background: #fefefe;
   border-bottom: 1px solid #e5e5e5;
-  width: 1058px;
-  padding-right: 71px;
-  padding-left: 71px;
 }
 
 .hotel-features .hotel-photo {
@@ -1027,13 +1014,13 @@ footer .footer-copyright {
   display: inline-block;
   height: 22px;
   margin-top: 8px;
-  text-align: left;
   padding-top: 5px;
+  text-align: left;
 }
 
 .btn-details {
-  background-color: #81b3d2;
   width: 95px;
+  background-color: #81b3d2;
 }
 
 .btn-details:hover {
@@ -1046,11 +1033,11 @@ footer .footer-copyright {
 }
 
 .btn-reservation {
-  background: #766357;
   width: 127px;
   margin-left: 3px;
+  background: #766357;
 }
-/***********************/
+
 .btn-reservation:hover {
   background-color: #604e44;
 }
@@ -1061,12 +1048,12 @@ footer .footer-copyright {
 }
 
 [class^="btn-"] {
+  padding-left: 15px;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   vertical-align: middle;
-  padding-left: 15px;
 }
 
 
@@ -1077,9 +1064,9 @@ footer .footer-copyright {
 }
 
 .hotel-info h2 {
+  margin: 0;
   font-size: 21px;
   font-weight: bold;
-  margin: 0;
 }
 
 .hotel-info h2:hover {
@@ -1100,8 +1087,8 @@ footer .footer-copyright {
   height: 27px;
   background-color: #f2f2f2;
   margin-top: 45px;
-  text-align: center;
   padding-top: 5px;
+  text-align: center;
 }
 
 .hotel-rating .stars {
@@ -1110,5 +1097,4 @@ footer .footer-copyright {
 
 .hotel-footer {
   background: #fefefe;
-  padding-top: 20px;
 }
