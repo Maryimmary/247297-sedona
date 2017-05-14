@@ -922,7 +922,7 @@ input[type="checkbox"]:checked:disabled + label:before  {
 }
 
 .sorting-menu a:not(:first-of-type) {
-  margin-left: 25px;
+  margin-left: 28px;
   border-bottom: 1px dashed #81b3d2;
   color: #b2b2b2;
 }
