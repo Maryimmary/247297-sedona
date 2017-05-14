@@ -33,7 +33,6 @@ body {
 }
 
 /*ИЗОБРАЖЕНИЯ*/
-
 .main-intro-photo {
   height: 510px;
   width: 1200px;
@@ -44,9 +43,7 @@ body {
   background-color: #314852;
 }
 
-
 /*ШРИФТЫ*/
-
 .header-menu a {
   font-size: 14px;
   font-weight: bold;
@@ -66,7 +63,6 @@ body {
   color: #766357;
 }
 
-
 .main-features {
   font-size: 21px;
   font-weight: bold;
@@ -80,7 +76,6 @@ body {
 }
 
 /*СЕТКА*/
-
 .clearfix::after {
   content: "";
   display: table;
@@ -92,7 +87,7 @@ body {
   padding: 0 6%;
   margin: 0;
   position: relative;
-  height: 56px;
+  min-height: 56px;
   box-sizing: border-box;
   background: #ffffff;
 }
@@ -121,7 +116,7 @@ body {
   text-align: right;
 }
 
-.header-menu li a {
+.header-menu a {
   text-decoration: none;
 }
 
@@ -136,7 +131,6 @@ body {
 /*ПЕРВАЯ СТРАНИЦА - основное содержание*/
 
 /*секция 1*/
-
 .main-intro {
   padding: 0;
   margin: 0;
@@ -144,7 +138,7 @@ body {
 
 .introduction {
   margin: 0;
-  height: 215px;
+  min-height: 215px;
   box-sizing: border-box;
   padding-top: 60px;
   background-color: #ffffff;
@@ -164,7 +158,6 @@ body {
   font-size: 14px;
 }
 
-
 /*Cекция 2*/
 section {
   margin: 0;
@@ -177,7 +170,6 @@ section:nth-of-type(3) .reason {
   width: 400px;
   min-height: 256px;
   background-color: #81b3d2;
-
 }
 
 section:nth-of-type(3) .picture-1 {
@@ -196,19 +188,19 @@ section:nth-of-type(3) .picture-1 {
   display: block;
 }
 
-.photo-advantages .reason .main-features {
+.photo-advantages .main-features {
   margin-top: 45px;
   text-align: center;
   line-height: 21px;
 }
 
-.photo-advantages .reason .reason-number {
+.photo-advantages .reason-number {
   margin-top: 26px;
   text-align: center;
   line-height: 21px;
 }
 
-.photo-advantages .reason .features-description {
+.photo-advantages .features-description {
   margin-top: 20px;
   text-align: center;
   line-height: 21px;
@@ -224,7 +216,7 @@ section:nth-of-type(3) .picture-1 {
 .bonuses .feature {
   float: left;
   width: 400px;
-  height: 310px;
+  min-height: 310px;
 }
 
 .bonuses img {
@@ -232,7 +224,7 @@ section:nth-of-type(3) .picture-1 {
   margin-left: 162px;
 }
 
-.bonuses .main-content-reason:last-of-type img {
+.bonuses img[alt="Сувениры"] {
   margin-top: 53px;
   margin-left: 170px;
 }
@@ -251,7 +243,6 @@ section:nth-of-type(3) .picture-1 {
 }
 
 /*секция 4*/
-
 section:nth-of-type(5) .reason {
   float: right;
   width: 400px;
@@ -266,11 +257,10 @@ section:nth-of-type(5) .picture-2 {
 }
 
 /*Секция 5*/
-
 .advantages .reason {
   float: left;
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   background-color: #eeeeee;
   color: #000000;
   margin: 0;
@@ -469,9 +459,9 @@ input[name$="count"] {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: top;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border: none;
+  vertical-align: top;
 }
 
 .popup-form-count button {
@@ -581,7 +571,7 @@ footer .footer-link {
   text-align: center;
 }
 
-footer .footer-link a {
+.footer-link a {
   padding: 0;
   font-size: 21px;
   font-weight: bold;
@@ -598,7 +588,7 @@ footer .footer-social {
 }
 
 .social-btn {
-  background: #81b3d2 url("../img/social-icon.png") no-repeat;
+  background: #81b3d2 url("../img/sprite.png") no-repeat;
   opacity: 1;
   width: 46px;
   height: 48px;
@@ -609,37 +599,41 @@ footer .footer-social {
 }
 
 .social-btn-twitter {
-  background-position: 15px 12px;
+  background-position: 0 0;
 }
 
 .social-btn-facebook {
-  background-position: -38px 12px;
+  background-position: -52px 0;
   margin-left: 2px;
   margin-right: 2px;
 }
 
 .social-btn-youtube {
-  background-position: -89px 12px;
+  background-position: -105px 0;
 }
 
-.social-btn:hover {
-  background-color: #669ec0;
+.social-btn-twitter:hover {
+  background-position: 0 -56px;
 }
 
-.social-btn:active {
-  background: #5496bd url("../img/social-icon-active.png") no-repeat;
+.social-btn-facebook:hover {
+  background-position: -52px -56px;
+}
+
+.social-btn-youtube:hover {
+  background-position: -105px -56px;
 }
 
 .social-btn-twitter:active {
-  background-position: 15px 12px;
+  background-position: 0 -112px;
 }
 
 .social-btn-facebook:active {
-  background-position: -39px 12px;
+  background-position: -52px -112px;
 }
 
 .social-btn-youtube:active {
-  background-position: -90px 12px;
+  background-position: -105px -112px;
 }
 
 footer .footer-copyright {
@@ -711,17 +705,25 @@ footer .footer-copyright {
   float: right;
   height: 180px;
   width: 330px;
-  padding-left: 15px;
+  padding-left: 12px;
   box-sizing: border-box;
+}
+
+.check-infrastructure h3,
+.check-residence h3 {
+  margin-top: 18px;
+  margin-bottom: 27px;
 }
 
 .check-infrastructure label,
 .check-residence label  {
   position: relative;
   display: block;
-  margin-top: 28px;
+  margin-bottom: 25px;
   padding-left: 40px;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .check-infrastructure input,
@@ -729,8 +731,7 @@ footer .footer-copyright {
   display: none;
 }
 
-.check-infrastructure input + label:before,
-.check-residence input + label:before  {
+input[type="checkbox"] + label:before  {
   content: "";
   width: 22px;
   height: 22px;
@@ -740,8 +741,7 @@ footer .footer-copyright {
   left: 0;
 }
 
-.check-infrastructure input:checked + label:before,
-.check-residence input:checked + label:before  {
+input[type="checkbox"]:checked + label:before  {
   content: "";
   width: 26px;
   height: 22px;
@@ -751,13 +751,11 @@ footer .footer-copyright {
   left: 0;
 }
 
-.check-infrastructure input:disabled + label:before,
-.check-residence input:disabled + label:before  {
+input[type="checkbox"]:disabled + label:before  {
   background-image: url("../img/checkbox-disabled.png");
 }
 
-.check-infrastructure input:checked:disabled + label:before,
-.check-residence input:checked:disabled + label:before  {
+input[type="checkbox"]:checked:disabled + label:before  {
   background-image: url("../img/checkbox-checked-disabled.png");
 }
 
@@ -791,17 +789,17 @@ footer .footer-copyright {
 
 .block-inputs label {
   display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  padding-left: 65px;
   font-size: 14px;
-  line-height: 33px;
-  vertical-align: top;
+  line-height: 35px;
   color: #ffffff;
   cursor: pointer;
 }
 
-.block-inputs .min-price,
 .block-inputs .max-price {
-  width: 90px;
-  padding-left: 65px;
+  margin-left: -10px;
 }
 
 .block-inputs input {
@@ -809,7 +807,7 @@ footer .footer-copyright {
   margin: 0;
   padding-left: 5px;
   color: inherit;
-  font: inherit;
+  font-size: inherit;
   background: none;
   border: none;
   outline: none;
@@ -857,8 +855,8 @@ footer .footer-copyright {
 
 .check-location input[type="submit"] {
   display: block;
-  height: 32px;
-  width: 133px;
+  height: 35px;
+  width: 138px;
   margin-bottom: 0;
   margin-left: 85px;
   box-sizing: border-box;
@@ -892,26 +890,27 @@ footer .footer-copyright {
 
 .sorting-block h2 {
   float: left;
-  margin-top: 30px;
+  margin-top: 28px;
   font-size: 21px;
   font-weight: bold;
 }
 
 .sorting-menu {
   float: left;
-  padding-left: 20px;
+  padding-left: 23px;
   margin-top: 5px;
   font-size: 12px;
 }
 
 .sorting-arrow {
   float: right;
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 .sorting-menu p,
 .sorting-menu a {
   display: inline-block;
+  vertical-align: top;
   margin-left: 23px;
   margin-top: 30px;
   text-decoration: none;
@@ -938,17 +937,18 @@ footer .footer-copyright {
 }
 
 .sorting-menu p {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .sorting-arrow a {
   font-size: 0;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .arrow::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   border: 11px solid #cccccc;
   border-right-width: 6px;
   border-left-width: 6px;
@@ -1000,20 +1000,23 @@ footer .footer-copyright {
 .type-hotel {
   width: 110px;
   height: 27px;
-  margin-top: 9px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .info-price {
   width: 142px;
   height: 27px;
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 2px;
+  font-size: 14px;
 }
 
 .hotel-info [class^="btn-"] {
   display: inline-block;
+  vertical-align: middle;
   height: 22px;
-  margin-top: 8px;
+  margin-top: 7px;
   padding-top: 5px;
   text-align: left;
 }
@@ -1056,7 +1059,6 @@ footer .footer-copyright {
   vertical-align: middle;
 }
 
-
 .hotel-features .hotel-rating {
   float: right;
   margin-top: 28px;
@@ -1079,6 +1081,7 @@ footer .footer-copyright {
 
 .hotel-info div {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .hotel-rating .rating {
