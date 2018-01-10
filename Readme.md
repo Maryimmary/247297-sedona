@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Mary Kruchina](https://up.htmlacademy.ru/htmlcss/17/user/247297).
+* Студент: .
 * Наставник: `Владислав Балабанович` (https://htmlacademy.ru/profile/vladbesson).
 
 ---
